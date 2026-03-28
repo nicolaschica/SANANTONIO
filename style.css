@@ -1193,8 +1193,8 @@
 
   .video-inner video {
     width: 100%;
-    height: auto !important; /* quita el 80vh */
-    max-height: 260px;
+    height: 400px !important;
+    max-height: 400px;
     border-radius: 10px;
   }
 }
