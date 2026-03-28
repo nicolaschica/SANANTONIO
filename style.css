@@ -1164,3 +1164,72 @@
     width: 26px;
     height: 26px;
 }
+
+/* ================= NAV MÁS COMPACTO ================= */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.6rem 1rem !important;
+  }
+
+  .nav-logo img {
+    height: 45px !important;
+  }
+
+  .nav-logo {
+    font-size: 1.1rem;
+  }
+}
+
+/* ================= VIDEO AJUSTADO ================= */
+@media (max-width: 768px) {
+
+  #video {
+    padding: 3.5rem 1rem !important;
+  }
+
+  .video-inner {
+    padding: 0 0.5rem;
+  }
+
+  .video-inner video {
+    width: 100%;
+    height: auto !important; /* quita el 80vh */
+    max-height: 260px;
+    border-radius: 10px;
+  }
+}
+
+/* ================= MEJOR PROPORCIÓN (OPCIONAL PRO) ================= */
+@media (max-width: 768px) {
+  .video-inner video {
+    aspect-ratio: 16/9;
+    max-height: none;
+  }
+}
+
+/* ================= TEXTOS MÁS AJUSTADOS ================= */
+@media (max-width: 768px) {
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-desc {
+    font-size: 1rem;
+  }
+}
+
+/* ================= ESPACIADOS GENERALES ================= */
+@media (max-width: 768px) {
+  section {
+    padding: 3.5rem 1rem !important;
+  }
+}
+
+/* ================= BOTÓN WHATSAPP MÁS PEQUEÑO ================= */
+@media (max-width: 768px) {
+  .floating-wa {
+    width: 50px;
+    height: 50px;
+  }
+}
