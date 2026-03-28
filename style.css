@@ -44,6 +44,7 @@
      padding: 1rem 3rem;
      background: transparent;
      transition: background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s;
+     height: 60px;
  }
 
  nav.scrolled {
@@ -58,10 +59,10 @@
      font-style: italic;
      color: var(--amber-light);
      letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-}
- 
+     display: flex;
+     align-items: center;
+ }
+
 
  .nav-links {
      display: flex;
@@ -1099,137 +1100,138 @@
  }
 
  /* 📱 SOLO EN CELULAR → convertir en slider */
-@media (max-width: 768px) {
-  .gallery-grid {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 10px;
-  }
+ @media (max-width: 768px) {
+     .gallery-grid {
+         display: flex;
+         overflow-x: auto;
+         gap: 15px;
+         scroll-snap-type: x mandatory;
+         padding-bottom: 10px;
+     }
 
-  .gallery-grid::-webkit-scrollbar {
-    display: none; /* ocultar scroll */
-  }
+     .gallery-grid::-webkit-scrollbar {
+         display: none;
+         /* ocultar scroll */
+     }
 
-  .gallery-item {
-    min-width: 85%;
-    flex: 0 0 auto;
-    scroll-snap-align: center;
-    border-radius: 10px;
-    overflow: hidden;
-  }
+     .gallery-item {
+         min-width: 85%;
+         flex: 0 0 auto;
+         scroll-snap-align: center;
+         border-radius: 10px;
+         overflow: hidden;
+     }
 
-  .gallery-item img {
-    height: 250px;
-    object-fit: cover;
-  }
-}
+     .gallery-item img {
+         height: 250px;
+         object-fit: cover;
+     }
+ }
 
-/* ===== ICONOS GLOBAL ===== */
-.feature-icon img,
-.menu-card-emoji img,
-.info-item-icon img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
-}
+ /* ===== ICONOS GLOBAL ===== */
+ .feature-icon img,
+ .menu-card-emoji img,
+ .info-item-icon img {
+     width: 22px;
+     height: 22px;
+     object-fit: contain;
+ }
 
-/* Centrado perfecto */
-.feature-icon,
-.info-item-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+ /* Centrado perfecto */
+ .feature-icon,
+ .info-item-icon {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 
-/* ICONOS MENU */
-.menu-card-emoji {
-    width: 60px;
-    height: 60px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+ /* ICONOS MENU */
+ .menu-card-emoji {
+     width: 60px;
+     height: 60px;
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 
-/* ICONOS FOOTER (REDES) */
-.social-row a i {
-    font-size: 20px;
-}
+ /* ICONOS FOOTER (REDES) */
+ .social-row a i {
+     font-size: 20px;
+ }
 
-/* FLOATING WHATSAPP ICON */
-.floating-wa svg {
-    width: 26px;
-    height: 26px;
-}
+ /* FLOATING WHATSAPP ICON */
+ .floating-wa svg {
+     width: 26px;
+     height: 26px;
+ }
 
-/* ================= NAV MÁS COMPACTO ================= */
-@media (max-width: 768px) {
-  nav {
-    padding: 0.6rem 1rem !important;
-  }
+ /* ================= NAV MÁS COMPACTO ================= */
+ @media (max-width: 768px) {
+     nav {
+         padding: 0.6rem 1rem !important;
+     }
 
-  .nav-logo img {
-    height: 45px !important;
-  }
+     .nav-logo img {
+         height: 45px !important;
+     }
 
-  .nav-logo {
-    font-size: 1.1rem;
-  }
-}
+     .nav-logo {
+         font-size: 1.1rem;
+     }
+ }
 
-/* ================= VIDEO AJUSTADO ================= */
-@media (max-width: 768px) {
+ /* ================= VIDEO AJUSTADO ================= */
+ @media (max-width: 768px) {
 
-  #video {
-    padding: 3.5rem 1rem !important;
-  }
+     #video {
+         padding: 3.5rem 1rem !important;
+     }
 
-  .video-inner {
-    padding: 0 0.5rem;
-  }
+     .video-inner {
+         padding: 0 0.5rem;
+     }
 
-  .video-inner video {
-    width: 100%;
-    height: 400px !important;
-    max-height: 400px;
-    border-radius: 10px;
-  }
-}
+     .video-inner video {
+         width: 100%;
+         height: 400px !important;
+         max-height: 400px;
+         border-radius: 10px;
+     }
+ }
 
-/* ================= MEJOR PROPORCIÓN (OPCIONAL PRO) ================= */
-@media (max-width: 768px) {
-  .video-inner video {
-    aspect-ratio: 16/9;
-    max-height: none;
-  }
-}
+ /* ================= MEJOR PROPORCIÓN (OPCIONAL PRO) ================= */
+ @media (max-width: 768px) {
+     .video-inner video {
+         aspect-ratio: 16/9;
+         max-height: none;
+     }
+ }
 
-/* ================= TEXTOS MÁS AJUSTADOS ================= */
-@media (max-width: 768px) {
+ /* ================= TEXTOS MÁS AJUSTADOS ================= */
+ @media (max-width: 768px) {
 
-  .section-title {
-    font-size: 1.8rem;
-  }
+     .section-title {
+         font-size: 1.8rem;
+     }
 
-  .section-desc {
-    font-size: 1rem;
-  }
-}
+     .section-desc {
+         font-size: 1rem;
+     }
+ }
 
-/* ================= ESPACIADOS GENERALES ================= */
-@media (max-width: 768px) {
-  section {
-    padding: 3.5rem 1rem !important;
-  }
-}
+ /* ================= ESPACIADOS GENERALES ================= */
+ @media (max-width: 768px) {
+     section {
+         padding: 3.5rem 1rem !important;
+     }
+ }
 
-/* ================= BOTÓN WHATSAPP MÁS PEQUEÑO ================= */
-@media (max-width: 768px) {
-  .floating-wa {
-    width: 50px;
-    height: 50px;
-  }
-}
+ /* ================= BOTÓN WHATSAPP MÁS PEQUEÑO ================= */
+ @media (max-width: 768px) {
+     .floating-wa {
+         width: 50px;
+         height: 50px;
+     }
+ }
