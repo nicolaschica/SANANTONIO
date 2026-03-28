@@ -1094,3 +1094,31 @@
      color: white;
      transform: scale(1.1);
  }
+
+ /* 📱 SOLO EN CELULAR → convertir en slider */
+@media (max-width: 768px) {
+  .gallery-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .gallery-grid::-webkit-scrollbar {
+    display: none; /* ocultar scroll */
+  }
+
+  .gallery-item {
+    min-width: 85%;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    height: 250px;
+    object-fit: cover;
+  }
+}
