@@ -58,7 +58,10 @@
      font-style: italic;
      color: var(--amber-light);
      letter-spacing: 0.02em;
- }
+  display: flex;
+  align-items: center;
+}
+ 
 
  .nav-links {
      display: flex;
@@ -1121,4 +1124,43 @@
     height: 250px;
     object-fit: cover;
   }
+}
+
+/* ===== ICONOS GLOBAL ===== */
+.feature-icon img,
+.menu-card-emoji img,
+.info-item-icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* Centrado perfecto */
+.feature-icon,
+.info-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ICONOS MENU */
+.menu-card-emoji {
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ICONOS FOOTER (REDES) */
+.social-row a i {
+    font-size: 20px;
+}
+
+/* FLOATING WHATSAPP ICON */
+.floating-wa svg {
+    width: 26px;
+    height: 26px;
 }
