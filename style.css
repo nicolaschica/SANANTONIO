@@ -111,16 +111,23 @@
      overflow: hidden;
  }
 
- .hero-bg {
-     position: absolute;
-     inset: 0;
-     background:
-         linear-gradient(160deg, rgba(75, 42, 14, 0.65) 0%, rgba(200, 93, 19, 0.45) 60%, rgba(242, 164, 27, 0.25) 100%),
-         url('img/fondo1.png') center/cover no-repeat;
-     transform-origin: center;
-     animation: heroZoom 18s ease-in-out infinite alternate;
- }
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(160deg, rgba(75, 42, 14, 0.65) 0%, rgba(200, 93, 19, 0.45) 60%, rgba(242, 164, 27, 0.25) 100%),
+        url('img/fondo1.png') center top/cover no-repeat;
+    transform-origin: center;
+    animation: heroZoom 18s ease-in-out infinite alternate;
+}
 
+@media (max-width: 768px) {
+    .hero-bg {
+        background:
+            linear-gradient(160deg, rgba(75, 42, 14, 0.65) 0%, rgba(200, 93, 19, 0.45) 60%, rgba(242, 164, 27, 0.25) 100%),
+            url('img/fondo1.png') 50% 30%/cover no-repeat;
+    }
+}
  @keyframes heroZoom {
      from {
          transform: scale(1);
