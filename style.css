@@ -116,7 +116,7 @@
      inset: 0;
      background:
          linear-gradient(160deg, rgba(75, 42, 14, 0.65) 0%, rgba(200, 93, 19, 0.45) 60%, rgba(242, 164, 27, 0.25) 100%),
-         url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&q=80') center/cover no-repeat;
+         url('img/fondo1.png') center/cover no-repeat;
      transform-origin: center;
      animation: heroZoom 18s ease-in-out infinite alternate;
  }
