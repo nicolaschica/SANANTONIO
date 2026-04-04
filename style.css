@@ -125,9 +125,11 @@
     .hero-bg {
         background:
             linear-gradient(160deg, rgba(75, 42, 14, 0.65) 0%, rgba(200, 93, 19, 0.45) 60%, rgba(242, 164, 27, 0.25) 100%),
-            url('img/fondo1.png') 50% 30%/cover no-repeat;
+            url('img/fondo1.png') center center/contain no-repeat;
+        background-color: #2a1000;
     }
 }
+
  @keyframes heroZoom {
      from {
          transform: scale(1);
